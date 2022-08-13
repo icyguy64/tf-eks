@@ -3,10 +3,10 @@ terraform {
 }
 
 locals{
-    vpc_id = "vpc-1234ab"
-    region = "eu-west-1"
+    vpc_id = "vpc-test123"
+    region = "eu-east-1"
     cluster_name = "dev-eks-cluster"
-    subnets = ["subnet-1234", "subnet-1235", "subnet-1236"]
+    subnets = ["subnet-123", "subnet-125", "subnet-126"]
     cluster_enabled_log_types = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
     asg_desired_capacity = 1
     asg_max_size = 3
